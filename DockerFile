@@ -1,4 +1,4 @@
-from openjdk:21-jdk-slim;
+from eclipse-temurin:21-jre-jammy;
 arg JAR_FILE=target/*.jar
 copy ${JAR_FILE} app.jar
 entrypoint ["java","-jar","/app.jar"]
